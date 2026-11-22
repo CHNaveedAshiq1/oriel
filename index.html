@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THE ORIEL · Howard &amp; Conway</title>
+<meta name="description" content="THE ORIEL by Howard & Conway. Twenty-seven floors over the ballpark district: residences, one penthouse, and a rooftop restaurant, bar and terrace. Private tours by appointment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <a class="brand" href="#tower" data-nav="residences" aria-label="The Oriel, back to the tower">
+    <span class="brand-mark" aria-hidden="true">O</span>
+    <span class="brand-name">THE ORIEL</span>
+    <span class="brand-divider" aria-hidden="true"></span>
+    <span class="brand-dev">HOWARD &amp; CONWAY</span>
+  </a>
+  <nav class="main-nav" aria-label="Chapters">
+    <button type="button" class="nav-link" data-nav="residences">RESIDENCES</button>
+    <button type="button" class="nav-link" data-nav="penthouse">PENTHOUSES</button>
+    <button type="button" class="nav-link" data-nav="rooftop">ROOFTOP</button>
+    <button type="button" class="pill-cream tour-open">PRIVATE TOUR</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- CHAPTER 1 · THE TOWER -->
+  <section class="tower" id="tower" aria-label="The tower, floor selector">
+    <div class="tower-stage">
+      <div class="frames" aria-hidden="true">
+        <img class="frame" data-frame="street" src="img/ext-street.jpg" alt="">
+        <img class="frame" data-frame="aerial" src="img/ext-aerial.jpg" alt="">
+        <img class="frame" data-frame="facade" src="img/ext-facade.jpg" alt="">
+        <img class="frame" data-frame="crown" src="img/ext-crown.jpg" alt="">
+        <div class="tower-vignette"></div>
+      </div>
+
+      <div class="tower-intro" id="towerIntro">
+        <p class="eyebrow">HOWARD &amp; CONWAY PRESENT</p>
+        <h1 class="intro-title">THE ORIEL</h1>
+        <p class="intro-sub">Twenty-seven floors over the ballpark district.</p>
+        <p class="scroll-hint">SCROLL TO CLIMB<span class="hint-line" aria-hidden="true"></span></p>
+      </div>
+
+      <div class="readout" id="readout">
+        <div class="leader" aria-hidden="true"><span class="leader-dot"></span></div>
+        <div class="readout-main">
+          <div class="numeral" id="roNumeral">5</div>
+          <div class="readout-text">
+            <button type="button" class="ro-label" id="roLabel" title="View details">THE RESIDENCE</button>
+            <div class="ro-spec" id="roSpec1"></div>
+            <button type="button" class="ro-spec ro-price" id="roSpec2" title="View details"></button>
+            <button type="button" class="ro-enter" id="roEnter">VIEW DETAILS</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="tower-foot">
+        <p class="microcopy">ONE HARBOR POINT · BALTIMORE</p>
+        <button type="button" class="pill-dark" id="backToStreet">&#8592;&nbsp; BACK TO THE STREET</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 2 · THE PENTHOUSE -->
+  <section class="hub" id="penthouse" data-hub="penthouse" aria-label="The Penthouse, floor 27">
+    <div class="hub-inner">
+      <div class="hub-head">
+        <p class="eyebrow">FLOOR 27 · AVAILABLE</p>
+        <h2 class="hub-title">THE PENTHOUSE</h2>
+        <button type="button" class="hub-sub" id="penthouseSub" title="View the penthouse details">3 Bed + Study · 3.5 Bath · 4,400 SF · From $7.9M</button>
+      </div>
+      <button type="button" class="hub-model" data-open-first aria-label="Open the Great Room">
+        <img src="img/model-penthouse.jpg" alt="Isometric cutaway model of the penthouse floor, floor 27">
+        <span class="model-hint">TAP THE MODEL, OR CHOOSE A ROOM</span>
+      </button>
+      <div class="tabbar" role="tablist" aria-label="Penthouse rooms">
+        <button type="button" class="tab" role="tab" data-room="great">GREAT ROOM</button>
+        <button type="button" class="tab" role="tab" data-room="kitchen">CHEF'S KITCHEN</button>
+        <button type="button" class="tab" role="tab" data-room="suite">PRIMARY SUITE</button>
+        <button type="button" class="tab" role="tab" data-room="spa">SPA BATH</button>
+      </div>
+      <div class="hub-foot">
+        <button type="button" class="pill-dark back-to-tower" data-back-floor="27">&#8592;&nbsp; BACK TO TOWER</button>
+        <button type="button" class="pill-cream tour-open" data-interest="The Penthouse">PRIVATE TOUR</button>
+      </div>
+    </div>
+    <div class="room-view" hidden></div>
+  </section>
+
+  <!-- CHAPTER 3 · THE ROOFTOP -->
+  <section class="hub" id="rooftop" data-hub="rooftop" aria-label="The Rooftop">
+    <div class="hub-inner">
+      <div class="hub-head">
+        <p class="eyebrow">TOP OF THE TOWER · OPEN FOR DINING</p>
+        <h2 class="hub-title">THE ROOFTOP</h2>
+        <button type="button" class="hub-sub" id="rooftopSub" title="View the rooftop details">Restaurant · Bar · Terrace</button>
+      </div>
+      <button type="button" class="hub-model" data-open-first aria-label="Open The Restaurant">
+        <img src="img/model-rooftop.jpg" alt="Section model of the rooftop, restaurant and bar below, terrace above">
+        <span class="model-hint">TAP THE MODEL, OR CHOOSE A SPACE</span>
+      </button>
+      <div class="tabbar" role="tablist" aria-label="Rooftop spaces">
+        <button type="button" class="tab" role="tab" data-room="restaurant">THE RESTAURANT</button>
+        <button type="button" class="tab" role="tab" data-room="bar">THE BAR</button>
+        <button type="button" class="tab" role="tab" data-room="terrace">THE TERRACE</button>
+      </div>
+      <div class="hub-foot">
+        <button type="button" class="pill-dark back-to-tower" data-back-floor="R">&#8592;&nbsp; BACK TO TOWER</button>
+        <button type="button" class="pill-cream tour-open" data-interest="The Rooftop">PRIVATE TOUR</button>
+      </div>
+    </div>
+    <div class="room-view" hidden></div>
+  </section>
+
+  <footer class="site-footer">
+    <span class="brand-mark" aria-hidden="true">O</span>
+    <p class="footer-line">THE ORIEL · HOWARD &amp; CONWAY · ONE HARBOR POINT, BALTIMORE</p>
+    <button type="button" class="pill-cream tour-open">PRIVATE TOUR</button>
+  </footer>
+
+</main>
+
+<!-- RESIDENCE DETAIL SHEET -->
+<div class="backdrop" id="detailBackdrop" hidden></div>
+<aside class="sheet" id="detailSheet" hidden role="dialog" aria-modal="true" aria-labelledby="detailTitle">
+  <button type="button" class="sheet-close" data-close-sheet aria-label="Close details">&#215;</button>
+  <p class="eyebrow" id="detailEyebrow">FLOOR 27</p>
+  <h3 class="sheet-title" id="detailTitle">THE PENTHOUSE</h3>
+  <p class="sheet-price" id="detailPrice">From $7.9M</p>
+  <dl class="detail-grid" id="detailGrid"></dl>
+  <h4 class="sheet-h">IN THE RESIDENCE</h4>
+  <ul class="detail-list" id="detailList"></ul>
+  <button type="button" class="pill-cream sheet-cta" id="detailTour">BOOK A PRIVATE TOUR</button>
+</aside>
+
+<!-- PRIVATE TOUR SHEET -->
+<div class="backdrop" id="tourBackdrop" hidden></div>
+<aside class="sheet" id="tourSheet" hidden role="dialog" aria-modal="true" aria-labelledby="tourTitle">
+  <button type="button" class="sheet-close" data-close-sheet aria-label="Close the tour form">&#215;</button>
+  <p class="eyebrow">HOWARD &amp; CONWAY</p>
+  <h3 class="sheet-title" id="tourTitle">PRIVATE TOUR</h3>
+  <p class="sheet-lede">Tours are by appointment, one party at a time. Tell us where to reach you and which floor to open first.</p>
+  <form id="tourForm" novalidate>
+    <label class="field"><span>FULL NAME</span>
+      <input type="text" name="name" autocomplete="name" placeholder="Your name">
+    </label>
+    <label class="field"><span>EMAIL</span>
+      <input type="email" name="email" autocomplete="email" placeholder="you@example.com">
+    </label>
+    <label class="field"><span>PHONE (OPTIONAL)</span>
+      <input type="tel" name="phone" autocomplete="tel" placeholder="+1 ...">
+    </label>
+    <label class="field"><span>I WOULD LIKE TO SEE</span>
+      <select name="interest" id="tourInterest">
+        <option>The Penthouse</option>
+        <option>A Residence</option>
+        <option>The Rooftop</option>
+        <option>The Whole Tower</option>
+      </select>
+    </label>
+    <label class="field"><span>PREFERRED DATE (OPTIONAL)</span>
+      <input type="date" name="date">
+    </label>
+    <label class="field"><span>ANYTHING WE SHOULD KNOW (OPTIONAL)</span>
+      <textarea name="message" rows="3" placeholder="Timing, party size, questions..."></textarea>
+    </label>
+    <p class="form-error" id="tourError" hidden></p>
+    <button type="submit" class="pill-cream sheet-cta">REQUEST THE TOUR</button>
+  </form>
+  <div class="tour-success" id="tourSuccess" hidden>
+    <p class="success-mark" aria-hidden="true">&#10003;</p>
+    <h4 class="sheet-h">REQUEST RECEIVED</h4>
+    <p class="sheet-lede" id="tourSuccessText">Thank you. The Howard &amp; Conway team will reply within one business day to fix your time.</p>
+    <button type="button" class="pill-dark" data-close-sheet>DONE</button>
+  </div>
+</aside>
+
+<script src="js/main.js"></script>
+</body>
+</html>
